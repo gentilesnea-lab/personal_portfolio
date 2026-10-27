@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nea Gentiles | IT Student & Aspiring Web Developer</title>
+<meta name="description" content="Personal CV website of Nea Gentiles, IT student and aspiring web developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><span></span></div>
+
+<header>
+  <div class="wrap" style="position:relative">
+    <nav aria-label="Main">
+      <a href="#home" class="logo">NG<b>.</b></a>
+      <ul class="links" id="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="icon-btn" id="theme" aria-label="Toggle dark mode">🌙</button></li>
+      </ul>
+      <button class="icon-btn" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+    </nav>
+    <div class="bar" id="bar"></div>
+  </div>
+</header>
+
+<main>
+<!-- 1. PERSONAL PROFILE -->
+<section id="home">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <span class="hello">Hi, I'm open to internships</span>
+        <h1>Nea Gentiles</h1>
+        <p class="role" id="role"></p>
+        <p class="intro">I'm a fourth-year Information Technology student who enjoys turning ideas into clean, fast and friendly websites. I learn by building, and I like solving real problems with code.</p>
+        <a href="#projects" class="btn primary">See my projects</a>
+        <a href="#contact" class="btn ghost">Contact me</a>
+        <!-- Add your CV PDF as cv.pdf in the same folder -->
+        <a href="cv.pdf" download class="btn ghost">Download CV</a>
+      </div>
+      <div class="photo">
+        <!-- Put your photo in the same folder as profile.jpg -->
+        <img src="tarantado.jpg" alt="Portrait of Nea Gentiles" width="340" height="425"
+             onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 340 425%22%3E%3Crect width=%22340%22 height=%22425%22 fill=%22%23dde3f0%22/%3E%3Ccircle cx=%22170%22 cy=%22160%22 r=%2260%22 fill=%22%23b79aa4%22/%3E%3Cpath d=%22M60 425c0-90 50-140 110-140s110 50 110 140z%22 fill=%22%23b79aa4%22/%3E%3C/svg%3E'">
+      </div>
+    </div>
+    <div class="card objective rv">
+      <h3>Career objective</h3>
+      <p style="color:var(--muted)">To secure an internship where I can apply my web development and problem-solving skills, learn from experienced professionals, and contribute to real projects while growing into a full stack developer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. BASIC INFORMATION -->
+<section id="about">
+  <div class="wrap">
+    <h2 class="rv">About me</h2>
+    <p class="lead rv">A quick look at who I am and what I want to work on.</p>
+    <div class="grid2">
+      <div class="card rv">
+        <ul class="info" style="padding:0">
+          <li><span>📍</span><div><small>Location</small>Panabo City, Philippines</div></li>
+          <li><span>✉️</span><div><small>Email</small><a href="mailto:neea.niang@gmail.com">neea.niang@gmail.com</a></div></li>
+          <li><span>📞</span><div><small>Contact number</small>+01 234 567 890</div></li>
+          <li><span>🌐</span><div><small>Languages</small>English, Filipino</div></li>
+        </ul>
+      </div>
+      <div class="card rv">
+        <h3>A bit more</h3>
+        <p style="color:var(--muted);margin:.5rem 0 1rem">I'm curious, organized and a team player. Outside of class I explore new frameworks, join tech events and help classmates debug their code.</p>
+        <h3>Career interests</h3>
+        <div class="tags"><span class="tag">Web Development</span><span class="tag">UI/UX Design</span><span class="tag">Databases</span><span class="tag">Cloud</span><span class="tag">Freelancing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. EDUCATION -->
+<section id="education" style="background:var(--surface)">
+  <div class="wrap">
+    <h2 class="rv">Education</h2>
+    <p class="lead rv">Where I've studied and what I've achieved so far.</p>
+    <div class="timeline">
+      <div class="item rv card"><span class="when">2023 – Present</span><h3>Bachelor of Science in Information Technology</h3><p>Davao del Norte State College · 4th Year</p><ul><li>Dean's Lister, 2nd Semester AY 25-26</li><li>Relevant courses: Web Systems, Database Management, Data Structures, Networking</li></ul></div>
+      <div class="item rv card"><span class="when">2021 – 2023</span><h3>Senior High School, Science Technology Engineering and Mathematics (STEM) Strand</h3><p>ACES Polythecnic College, Inc.</p><ul><li>TESDA EIM NC II passer and Robotics certification</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <h2 class="rv">Skills</h2>
+    <p class="lead rv">Technical tools I use and the professional skills that go with them.</p>
+    <div class="skills">
+      <div class="card rv" id="bars">
+        <h3 style="margin-bottom:1rem">Technical</h3>
+        <div class="skill"><div><span>HTML & CSS</span><span>75%</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+        <div class="skill"><div><span>JavaScript</span><span>60%</span></div><div class="track"><div class="fill" data-w="60"></div></div></div>
+        <div class="skill"><div><span>Git & GitHub</span><span>70%</span></div><div class="track"><div class="fill" data-w="70"></div></div></div>
+        <div class="skill"><div><span>SQL / MySQL</span><span>50%</span></div><div class="track"><div class="fill" data-w="50"></div></div></div>
+        <div class="skill"><div><span>Python / Java</span><span>65%</span></div><div class="track"><div class="fill" data-w="65"></div></div></div>
+        <div class="skill"><div><span>UI/UX Design (Figma)</span><span>70%</span></div><div class="track"><div class="fill" data-w="70"></div></div></div>
+      </div>
+      <div>
+        <div class="card rv" style="margin-bottom:1.5rem">
+          <h3 style="margin-bottom:1rem">Professional</h3>
+          <div class="chips"><span class="chip">🧩 Problem solving</span><span class="chip">💬 Communication</span><span class="chip">🤝 Teamwork</span><span class="chip">⏱️ Time management</span><span class="chip">📚 Fast learner</span></div>
+        </div>
+        <div class="card rv">
+          <h3 style="margin-bottom:1rem">Currently learning</h3>
+          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Dart</span><span class="chip">React</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PROJECTS + 6. GITHUB -->
+<section id="projects" style="background:var(--surface)">
+  <div class="wrap">
+    <h2 class="rv">Projects</h2>
+    <p class="lead rv">A selection of school and personal projects. Filter by type.</p>
+    <div class="filters rv" role="group" aria-label="Filter projects">
+      <button class="on" data-f="all">All</button><button data-f="web">Web</button><button data-f="db">Database</button><button data-f="design">Design</button>
+    </div>
+    <div class="projects">
+      <article class="card proj rv" data-c="web">
+        <div class="thumb" style="background:linear-gradient(135deg,#7b1e3a,#b04a69)">&lt;/&gt;</div>
+        <div class="pbody"><h3>Personal Portfolio</h3><p>Responsive portfolio with dark mode and animated sections.</p><div class="tags"><span class="tag">TypeScript</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">HTML</span></div>
+        <div class="plinks"><a href="https://github.com/gentilesnea-lab/neaportfolio" target="_blank" rel="noopener">GitHub</a><a href="#" target="_blank" rel="noopener">Live demo</a></div></div>
+      </article>
+      <article class="card proj rv" data-c="web">
+        <div class="thumb" style="background:linear-gradient(135deg,#287c9e,#77c7d4)">Weather</div>
+        <div class="pbody"><h3>Weather Dashboard</h3><p>Search any city for current temperature, conditions, pressure, and wind speed. Includes responsive layouts and light/dark themes.</p><div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">CSS</span><span class="tag">OpenWeatherMap API</span></div>
+        <div class="plinks"><a href="https://github.com/gentilesnea-lab/weather-dashboard" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+      <article class="card proj rv" data-c="web">
+        <div class="thumb" style="background:linear-gradient(135deg,#287c9e,#77c7d4)">Home Plan</div>
+        <div class="pbody"><h3>AI-Powered Residential Housing Planner</h3><p>Interactive planning and estimation system with suggested home layouts, editable floorplans, material requirements, budget estimates, and construction timelines.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">GIS</span></div>
+        <div class="plinks"><a href="https://github.com/gentilesnea-lab/capstonev1" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+      <article class="card proj rv" data-c="web">
+        <div class="thumb" style="background:linear-gradient(135deg,#8a5a2b,#c48b4c)">Recipes</div>
+        <div class="pbody"><h3>Recipe Finder App</h3><p>Flutter recipe app for exploring and searching recipes, browsing categories, viewing recipe details, and saving favorites.</p><div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span></div>
+        <div class="plinks"><a href="https://github.com/gentilesnea-lab/recipes-finder-app" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+      <article class="card proj rv" data-c="web">
+        <div class="thumb" style="background:linear-gradient(135deg,#44627a,#86a6b8)">Hardware</div>
+        <div class="pbody"><h3>Hardware E-commerce App</h3><p>React e-commerce application for browsing and shopping for hobby electronics, built with Firebase.</p><div class="tags"><span class="tag">React</span><span class="tag">React Bootstrap</span><span class="tag">Firebase</span></div>
+        <div class="plinks"><a href="https://github.com/gentilesnea-lab/hardware-ecommerce-app" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+    </div>
+    <div class="card rv" style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center;justify-content:space-between">
+      <div><h3>GitHub profile</h3><p style="color:var(--muted)">More repositories, experiments and class projects live here.</p></div>
+      <a class="btn primary" href="https://github.com/gentilesnea-lab" target="_blank" rel="noopener">Visit my GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- 9. ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="wrap">
+    <h2 class="rv">Achievements & certifications</h2>
+    <p class="lead rv">Recognition, training and activities beyond the classroom.</p>
+    <div class="cards">
+      <div class="card rv"><span class="emoji">🏅</span><h3>Dean's Lister</h3><p>Academic excellence award, AY 25-26.</p></div>
+      <div class="card rv"><span class="emoji">📜</span><h3>TESDA NC II: Electrical Installation and Maintenance</h3><p>National Certificate II passer, earned during Senior High School.</p></div>
+      <div class="card rv"><span class="emoji">🏆</span><h3>Robotics Training: Certificate of Completion</h3><p>Completed hands-on robotics training (June 20–28, 2022), building robots with LEGO Mindstorms EV3.</p></div>
+      <div class="card rv"><span class="emoji">🎓</span><h3>Cisco Networking Academy: CCNA: Switching, Routing, and Wireless Essentials</h3><p>Completed Cisco Networking Academy training in switching, routing, and wireless networking.</p></div>
+      <div class="card rv"><span class="emoji">💡</span><h3>AI for Innovation of Capstone Project</h3><p>BSIT 413 Advanced Seminar Series (2 days), Davao del Norte State College, September 2026.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. EXPERIENCE -->
+<section id="experience" style="background:var(--surface)">
+  <div class="wrap">
+    <h2 class="rv">Experience</h2>
+    <p class="lead rv">Hands-on work, leadership and school activities.</p>
+    <div class="timeline">
+      <div class="item rv card"><span class="when">2026 – Present</span><h3>Church Officer &amp; Elementary Religion Teacher</h3><p>Serve as a church officer and teach religion to elementary students.</p></div>
+      <div class="item rv card"><span class="when">2026</span><h3>Website Development Support</h3><p>Helped a friend build a website.</p></div>
+      <div class="item rv card"><span class="when">2022 – 2023</span><h3>FLOCCI Club President</h3><p>Served as club president during Senior High School.</p></div>
+      <div class="item rv card"><span class="when">2025 – Present</span><h3>Capstone Project Lead</h3><p>Leading the capstone team for the AI-Powered Residential Housing Planning and Estimation System at Davao del Norte State College.</p><ul><li>Coordinate team tasks and monitor project progress</li><li>Help plan system features and the project timeline</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7, 8, CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <h2 class="rv">Let's connect</h2>
+    <p class="lead rv">Open to internships, freelance work and entry-level roles. Send a message or find me online.</p>
+    <div class="grid2">
+      <form class="card rv" id="form">
+        <div><label for="n">Your name</label><input id="n" required></div>
+        <div><label for="e">Your email</label><input id="e" type="email" required></div>
+        <div><label for="m">Message</label><textarea id="m" rows="4" required></textarea></div>
+        <button class="btn primary" type="submit">Send message</button>
+        <small id="msg" aria-live="polite" style="color:var(--brand)"></small>
+      </form>
+      <div class="card rv">
+        <h3 style="margin-bottom:1rem">Find me online</h3>
+        <div class="social">
+          <a href="https://github.com/gentilesnea-lab" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.facebook.com/nea.gentiles.1" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/nneeasg/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> Your Full Name. Built with HTML, CSS and JavaScript.</footer>
+<button class="icon-btn" id="top" aria-label="Back to top">↑</button>
+
+<script src="script1.js"></script>
+</body>
+</html>
